@@ -15,7 +15,7 @@ export class ListarComponent implements OnInit {
     this.service.getPersonas()
     .subscribe(data=>{
       this.personas=data;
-    })
+    });
   }
 
 }

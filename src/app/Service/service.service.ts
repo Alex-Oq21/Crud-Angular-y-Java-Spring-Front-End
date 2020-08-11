@@ -7,8 +7,8 @@ import { Persona } from '../Modelo/Persona';
 export class ServiceService {
   constructor(private http:HttpClient) { }
   //URL que hace referencia al proyecto back-end
-   url='http://localhost:8081/CrudConAngular/persona';
+   Url='http://localhost:8081/CrudConAngular/persona';
    getPersonas(){
-     return this.http.get<Persona[]>(this.url);
+     return this.http.get<Persona[]>(this.Url);
    }
 }
